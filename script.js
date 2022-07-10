@@ -22,7 +22,7 @@ let quizContainer = document.querySelector(".quiz__container");
 let mark = 0;
 let id = 0;
 let checked = 0;
-const correctAnswers = ["A", "B", "B", "D", "C"];
+const correctAnswers = ["A", "B", "B", "D", "A"];
 const STARTBTN = document.querySelector(".startBtn");
 const MARKBTN = document.querySelector(".markBtn");
 const TIMER = document.querySelector(".timer");
@@ -105,7 +105,7 @@ MARKBTN.addEventListener("click", () => {
     let seconds;
     if (endTime >= 60) {
         seconds = endTime % 60;
-        minutes = (endTime - sec) / 60;
+        minutes = (endTime - seconds) / 60;
     } else {
         seconds = endTime;
         minutes = 0;
