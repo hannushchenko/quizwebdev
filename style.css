@@ -11,7 +11,7 @@ body {
     padding: 5px;
     border: 1px solid black;
     margin: 10px 0;
-    width: 48%;
+    width: 500px;
 }
 
 .hidden {
@@ -35,13 +35,32 @@ body {
     font-weight: bold;
 }
 .scale {
+    position: fixed;
+    top: 5px;
+    outline: 10px solid rgba(255, 255, 255, 0.8);
     background-color: green;
     height: 5px;
     width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+.timer {
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 560px) {
     .quiz {
         width: 100%;
+    }
+}
+@media screen and (max-width: 360px) {
+    .quiz input {
+        width: 100%;
+    }
+    input {
+        height: 30px;
+    }
+
+    input.elem {
+        margin-bottom: 5px;
     }
 }
