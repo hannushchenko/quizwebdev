@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.quiz {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 10px 0;
+    width: 48%;
+}
+
+.hidden {
+    display: none;
+}
+
+.markBtn {
+}
+.startBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 35px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.endDiv {
+    font-size: 30px;
+    font-weight: bold;
+}
+.scale {
+    background-color: green;
+    height: 5px;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .quiz {
+        width: 100%;
+    }
+}
