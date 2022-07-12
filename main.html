@@ -1,120 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Quiz WebDev</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="shortcut icon" href="./img/pi.png" type="image/x-icon" />
-    </head>
-    <body>
-        <button class="startBtn">Start</button>
-        <div class="quiz__container hidden">
-            <div class="scale"></div>
-            <p class="timer">Час виконання:</p>
-            <div class="quiz">
-                <p>1. Як розшифровується HTML?</p>
-                <ol type="A">
-                    <li>HyperText Markup Language</li>
-                    <li>HyperText Makeup Language</li>
-                    <li>HyperText Madeup Language</li>
-                    <li>HyperText Mainup Language</li>
-                </ol>
-                <input
-                    maxlength="1"
-                    class="elem"
-                    type="text"
-                    name="quantity"
-                    placeholder="Відповідь"
-                />
-                <input class="button" type="button" value="Відповісти" />
-                <div class="answer"></div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz WebDev</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/pi.png" type="image/x-icon" />
+  </head>
+  <body>
+    <button class="startBtn">Start</button>
+    <div class="quiz__container hidden">
+      <div class="scale"></div>
+      <p class="timer">Час виконання:</p>
+      <div class="quiz">
+        <p>1. Як розшифровується HTML?</p>
+        <ol type="A">
+          <li>HyperText Markup Language</li>
+          <li>HyperText Makeup Language</li>
+          <li>HyperText Madeup Language</li>
+          <li>HyperText Mainup Language</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
 
-            <!-- -->
+      <!-- -->
 
-            <div class="quiz">
-                <p>2. Якими дужками окутується тег?</p>
-                <ol type="A">
-                    <li>{тег}</li>
-                    <li><тег></li>
-                    <li>(тег)</li>
-                    <li>[тег]</li>
-                </ol>
-                <input
-                    maxlength="1"
-                    class="elem"
-                    type="text"
-                    name="quantity"
-                    placeholder="Відповідь"
-                />
-                <input class="button" type="button" value="Відповісти" />
-                <div class="answer"></div>
-            </div>
+      <div class="quiz">
+        <p>2. Якими дужками окутується тег?</p>
+        <ol type="A">
+          <li>{тег}</li>
+          <li><тег></li>
+          <li>(тег)</li>
+          <li>[тег]</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
 
-            <div class="quiz">
-                <p>3. Виберіть НЕПАРНИЙ тег</p>
-                <ol type="A">
-                    <li>div</li>
-                    <li>img</li>
-                    <li>p</li>
-                    <li>a</li>
-                </ol>
-                <input
-                    maxlength="1"
-                    class="elem"
-                    type="text"
-                    name="quantity"
-                    placeholder="Відповідь"
-                />
-                <input class="button" type="button" value="Відповісти" />
-                <div class="answer"></div>
-            </div>
+      <div class="quiz">
+        <p>3. Виберіть <b>НЕПАРНИЙ</b> тег</p>
+        <ol type="A">
+          <li>div</li>
+          <li>img</li>
+          <li>p</li>
+          <li>a</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
 
-            <div class="quiz">
-                <p>4. Які дочірні теги містить <b>HTML</b>?</p>
-                <ol type="A">
-                    <li><b>Head</b> та <b>Footer</b></li>
-                    <li>Heat та Body</li>
-                    <li>Header та Body</li>
-                    <li>Head та Body</li>
-                </ol>
-                <input
-                    maxlength="1"
-                    class="elem"
-                    type="text"
-                    name="quantity"
-                    placeholder="Відповідь"
-                />
-                <input class="button" type="button" value="Відповісти" />
-                <div class="answer"></div>
-            </div>
+      <div class="quiz">
+        <p>4. Які дочірні теги містить <b>HTML</b>?</p>
+        <ol type="A">
+          <li><b>Head</b> та <b>Footer</b></li>
+          <li><b>Heat</b> та <b>Body</b></li>
+          <li><b>Header</b> та <b>Body</b></li>
+          <li><b>Head</b> та <b>Body</b></li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
 
-            <div class="quiz">
-                <p>
-                    5.Всередині тегу <b>head</b> містяться ВСІ теги
-                    <b>ОКРІМ</b> тегу:?
-                </p>
-                <ol type="A">
-                    <li>body</li>
-                    <li>meta</li>
-                    <li>title</li>
-                    <li>link</li>
-                </ol>
-                <input
-                    maxlength="1"
-                    class="elem"
-                    type="text"
-                    name="quantity"
-                    placeholder="Відповідь"
-                />
-                <input class="button" type="button" value="Відповісти" />
-                <div class="answer"></div>
-            </div>
-        </div>
+      <div class="quiz">
+        <p>
+          5. Всередині тегу <b>head</b> містяться ВСІ теги <b>ОКРІМ</b> тегу:?
+        </p>
+        <ol type="A">
+          <li>body</li>
+          <li>meta</li>
+          <li>title</li>
+          <li>link</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
 
-        <button class="markBtn hidden">Дізнатись оцінку</button>
-        <script src="script.js"></script>
-    </body>
+      <div class="quiz">
+        <p>6. Скільки існує рівнів заголовків?</p>
+        <ol type="A">
+          <li>Три</li>
+          <li>Чотири</li>
+          <li>П'ять</li>
+          <li>Шість</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>7. Головним атрибутом тегу <b>"a"</b> є:</p>
+        <ol type="A">
+          <li>width</li>
+          <li>color</li>
+          <li>href</li>
+          <li>src</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>
+          8. Для створення списків можна використовувати всі теги
+          <b>ОКРІМ</b> (оберіть зайвий)
+        </p>
+        <ol type="A">
+          <li>ul</li>
+          <li>il</li>
+          <li>ol</li>
+          <li>li</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>9. Найбільшу пріорітетність(важливість) має CSS селектор</p>
+        <ol type="A">
+          <li>class</li>
+          <li>id</li>
+          <li>body</li>
+          <li>head</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>
+          10. Як НЕ підключається CSS? (Оберіть <b>НЕПРАВИЛЬНИЙ</b> варіант)
+        </p>
+        <ol type="A">
+          <li>За допомогою HTML тегу style</li>
+          <li>За допомогою тегу link:css</li>
+          <li>За допомогою атрибуту тегу style=""</li>
+          <li>За допомогою HTML тегу css</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>11. Яку назву має текстовий <b>тег - обгортка</b> ?</p>
+        <ol type="A">
+          <li>spar</li>
+          <li>spam</li>
+          <li>span</li>
+          <li>spaw</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>12. Як позначити в CSS <b>наведення</b> курсору на елемент div?</p>
+        <ol type="A">
+          <li>div:hover{}</li>
+          <li>div#hover{}</li>
+          <li>div.hover{}</li>
+          <li>div*hover{}</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>13. В якому рядку <b>НЕПРАВИЛЬНО</b> описано <b>border</b>?</p>
+        <ol type="A">
+          <li>border: 2px solid red</li>
+          <li>border: 24p solid green</li>
+          <li>border: 9px dotted blue</li>
+          <li>border: 1px dashed yellow</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>14. Як прибрати підкреслення в посилань?</p>
+        <ol type="A">
+          <li>text-decoration: none</li>
+          <li>type-decoration: none</li>
+          <li>text-decoration: 0px</li>
+          <li>type-decoration: 0px</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>15. Як заокруглити обводку елемента?</p>
+        <ol type="A">
+          <li>Border-radius</li>
+          <li>Border-radio</li>
+          <li>Background-radius</li>
+          <li>Background-radio</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>
+          16. Якого значення <b>НЕ МОЖЕ БУТИ </b>у атрибуту <b>type=""</b> тегу
+          <b>input</b>?
+        </p>
+        <ol type="A">
+          <li>text</li>
+          <li>tel</li>
+          <li>radio</li>
+          <li>select</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>17. Яким атрибутом задають <b>текст-підказку</b> в <b>input</b>?</p>
+        <ol type="A">
+          <li>textorder</li>
+          <li>textholder</li>
+          <li>placeorder</li>
+          <li>placeholder</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>18. Оберіть елемент для введення великої кількості тексту?</p>
+        <ol type="A">
+          <li>inputarea</li>
+          <li>textbox</li>
+          <li>textarea</li>
+          <li>inputbox</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>
+          19. Який атрибут тега <b>"a"</b> відповідає за те, щоб посилання
+          відкривалось в новій вкладці?
+        </p>
+        <ol type="A">
+          <li>target="_next"</li>
+          <li>target="_blank"</li>
+          <li>target="value"</li>
+          <li>target="target"</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>20. Вкажіть назви кнопок форми:</p>
+        <ol type="A">
+          <li>Complete & Reset</li>
+          <li>Submit & Delete</li>
+          <li>Complete & Delete</li>
+          <li>Submit & Reset</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>
+          21. Вкажіть в наступному порядку властивості блоків: висота=> ширина=>
+          внутрішній відступ=> зовнішній відступ
+        </p>
+        <ol type="A">
+          <li>width=>height=>margin=>padding</li>
+          <li>width=>height=>padding=>margin</li>
+          <li>height=>width=>margin=>padding</li>
+          <li>height=>width=>padding=>margin</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>22. Якою властивістю змінюється <b>розмір шрифта</b> в пікселях?</p>
+        <ol type="A">
+          <li>Text-size</li>
+          <li>Font-size</li>
+          <li>Text-weight</li>
+          <li>Font-weight</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>23. Яким тегом можна додати <b>перенос рядка</b>?</p>
+        <ol type="A">
+          <li>dr</li>
+          <li>br</li>
+          <li>pr</li>
+          <li>qr</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+
+      <div class="quiz">
+        <p>24. Як зробити <b>нахилений текст(курсив)</b>?</p>
+        <ol type="A">
+          <li>text-transform: cursive</li>
+          <li>font-size: solid</li>
+          <li>font-style: italic</li>
+          <li>text-variant: label</li>
+        </ol>
+        <input
+          maxlength="1"
+          class="elem"
+          type="text"
+          name="quantity"
+          placeholder="Відповідь"
+        />
+        <input class="button" type="button" value="Відповісти" />
+        <div class="answer"></div>
+      </div>
+    </div>
+
+    <button class="markBtn hidden">Дізнатись оцінку</button>
+    <script src="script.js"></script>
+  </body>
 </html>
